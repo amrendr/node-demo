@@ -24,6 +24,7 @@ router.get('/', function (req, res, next) {
   data = [
     { text: 'App Version', value: config.appVersion },
     { text: 'Client IP', value: client_ip },
+    { text: 'App ID', value: req.cookies.APP },
     { text: 'User Agent', value: user_agent },
     { text: 'Device', value: JSON.stringify(deviceDetector.parse(user_agent), null, 2)},
     { text: 'Geolocation', value: JSON.stringify(loc, null, 2)}
