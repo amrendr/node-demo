@@ -1,5 +1,5 @@
 {
-  "name": "node-template",
+  "name": "node-demo",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/amrendr/node-template.git"
+    "url": "https://github.com/amrendr/node-demo.git"
   },
   "dependencies": {
     "compression": "^1.7.4",

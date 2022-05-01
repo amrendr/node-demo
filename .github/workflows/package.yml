@@ -22,7 +22,9 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: ghcr.io/${{ github.repository }}
+          images: |
+            ghcr.io/${{ github.repository }}
+            registry.heroku.com/node043/web
           tags: type=semver,pattern={{version}}
       
       - name: Login to Github Registry
@@ -32,6 +34,13 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       
+      - name: Login to Heroku Registry
+        uses: docker/login-action@v1 
+        with:
+          registry: registry.heroku.com
+          username: ${{secrets.HEROKU_USER}}
+          password: ${{ secrets.HEROKU_API_KEY }}
+      
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
@@ -39,3 +48,8 @@ jobs:
           push: true
           file: ./build/Dockerfile
           tags: ${{ steps.meta.outputs.tags }}  
+      
+      - name: Publish 
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        run: heroku container:release web -a node043
