@@ -35,6 +35,7 @@ COPY . .
 ENV NODE_ENV=production
 
 RUN ./node_modules/.bin/gulp
+RUN ./node_modules/.bin/gulp geodata
 
 FROM node:18.0-alpine
 
@@ -46,6 +47,7 @@ COPY --from=base_image /usr/src/app/node_modules ./node_modules
 
 #Copy rest of required files from build image
 COPY --from=build_image /usr/src/app/src ./src
+COPY --from=build_image /usr/src/app/dist ./dist
 COPY --from=build_image /usr/src/app/public ./public
 COPY --from=build_image /usr/src/app/package*.json .
 

@@ -1,7 +1,8 @@
 {
   "ignore": [
     "public/**/*",
-    "src/assets/**/*"
+    "src/assets/**/*",
+    "dist/**/*"
   ],
   "ext": "js,json,pug"
 }
