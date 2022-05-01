@@ -11,6 +11,7 @@ var app_context = require('./middleware/app-context');
 var app_locals = require('./middleware/app-locals');
 
 var indexRouter = require('./routes/index');
+var demoRouter = require('./routes/demo/appl');
 
 var app = express();
 
@@ -56,6 +57,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(require('./middleware/dev_livereload'));
 
 app.use('/', indexRouter);
+app.use('/demo', demoRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
