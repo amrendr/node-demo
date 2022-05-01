@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/amrendr/node-demo/compare/v1.2.0...v1.3.0) (2022-05-01)
+
+
+### Features
+
+* **demo:** Resolve geolocation from maxmind db using client IP address ([35c5fd4](https://github.com/amrendr/node-demo/commit/35c5fd4d5801dda08a23f40dd46fe18220de3ff6))
+
 # [1.2.0](https://github.com/amrendr/node-demo/compare/v1.1.0...v1.2.0) (2022-05-01)
 
 
