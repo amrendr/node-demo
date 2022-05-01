@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/amrendr/node-demo/compare/v1.3.0...v1.4.0) (2022-05-01)
+
+
+### Features
+
+* **demo:** Middleware for adding cookie to app ([9c1869c](https://github.com/amrendr/node-demo/commit/9c1869c1e450ea0da24da04bdd73f932ca8d7e07))
+
 # [1.3.0](https://github.com/amrendr/node-demo/compare/v1.2.0...v1.3.0) (2022-05-01)
 
 
