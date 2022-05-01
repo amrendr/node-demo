@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/amrendr/node-demo/compare/v1.1.0...v1.2.0) (2022-05-01)
+
+
+### Features
+
+* **demo:** parse usragent str to show device info ([40469db](https://github.com/amrendr/node-demo/commit/40469dbdf55b7ba6ff26cd1bec743f5005297841))
+
 # [1.1.0](https://github.com/amrendr/node-demo/compare/v1.0.0...v1.1.0) (2022-05-01)
 
 
