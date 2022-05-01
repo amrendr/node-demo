@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/amrendr/node-demo/compare/v1.5.0...v1.5.1) (2022-05-01)
+
+
+### Bug Fixes
+
+* **demo:** demo btn left margin in mobile screen ([4baa222](https://github.com/amrendr/node-demo/commit/4baa2222b99d426df346a2ecee523040f2657854))
+
 # [1.5.0](https://github.com/amrendr/node-demo/compare/v1.4.0...v1.5.0) (2022-05-01)
 
 
