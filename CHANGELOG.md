@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/amrendr/node-demo/compare/v1.4.0...v1.5.0) (2022-05-01)
+
+
+### Features
+
+* **demo:** demo application pages ([519e6bf](https://github.com/amrendr/node-demo/commit/519e6bf415b63bec3536982713dc240ca49c7746))
+
 # [1.4.0](https://github.com/amrendr/node-demo/compare/v1.3.0...v1.4.0) (2022-05-01)
 
 
