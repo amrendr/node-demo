@@ -50,9 +50,8 @@
   }
 
   .app-card {
-    @apply rounded app-bg-100 app-text-secondary 
-    shadow hover:shadow-2xl dark:shadow-black 
-    relative hover:z-10
+    @apply rounded app-bg-100 app-text-secondary
+    shadow hover:shadow-lg dark:shadow-gray-500
   }
 }
 
