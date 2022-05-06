@@ -1,3 +1,10 @@
+# [1.6.0-rc.2](https://github.com/amrendr/node-demo/compare/v1.6.0-rc.1...v1.6.0-rc.2) (2022-05-06)
+
+
+### Bug Fixes
+
+* **demo:** fix text color on thank you page ([eaea2ef](https://github.com/amrendr/node-demo/commit/eaea2efd28a264ed2ee5c93a665071181ed1955e))
+
 # [1.6.0-rc.1](https://github.com/amrendr/node-demo/compare/v1.5.1...v1.6.0-rc.1) (2022-05-06)
 
 
