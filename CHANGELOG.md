@@ -1,3 +1,23 @@
+# [1.6.0](https://github.com/amrendr/node-demo/compare/v1.5.1...v1.6.0) (2022-05-06)
+
+
+### Bug Fixes
+
+* **demo:** Change the title of the demo pages ([0eb44d2](https://github.com/amrendr/node-demo/commit/0eb44d27dee8159afc2336de02dc7edd7503b900))
+* **demo:** fix btn color and ring in dark mode ([123c59b](https://github.com/amrendr/node-demo/commit/123c59b1b89f86fe353e06372e7c0696d312a333))
+* **demo:** fix text color on thank you page ([eaea2ef](https://github.com/amrendr/node-demo/commit/eaea2efd28a264ed2ee5c93a665071181ed1955e))
+* **demo:** proper card shadow in dark mode ([933c49e](https://github.com/amrendr/node-demo/commit/933c49ea846b41b37f1f529f87215dfd6be1e2b4))
+
+
+### Features
+
+* **pre-release:** starting 1.6.0 rc branch ([e2eb11c](https://github.com/amrendr/node-demo/commit/e2eb11ce12b3694dfe6ba8492e7fc8f82ed5b0b9))
+
+
+### Reverts
+
+* Revert "fix(demo): fix btn color and ring in dark mode" ([ea348d9](https://github.com/amrendr/node-demo/commit/ea348d9dc975eb1a9247797a994af8f1c573e717))
+
 # [1.6.0-rc.6](https://github.com/amrendr/node-demo/compare/v1.6.0-rc.5...v1.6.0-rc.6) (2022-05-06)
 
 
