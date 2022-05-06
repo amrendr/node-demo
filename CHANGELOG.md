@@ -1,3 +1,10 @@
+# [1.6.0-rc.3](https://github.com/amrendr/node-demo/compare/v1.6.0-rc.2...v1.6.0-rc.3) (2022-05-06)
+
+
+### Bug Fixes
+
+* **demo:** Change the title of the demo pages ([0eb44d2](https://github.com/amrendr/node-demo/commit/0eb44d27dee8159afc2336de02dc7edd7503b900))
+
 # [1.6.0-rc.2](https://github.com/amrendr/node-demo/compare/v1.6.0-rc.1...v1.6.0-rc.2) (2022-05-06)
 
 
