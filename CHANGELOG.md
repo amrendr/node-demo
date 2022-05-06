@@ -1,3 +1,10 @@
+# [1.6.0-rc.1](https://github.com/amrendr/node-demo/compare/v1.5.1...v1.6.0-rc.1) (2022-05-06)
+
+
+### Features
+
+* **pre-release:** starting 1.6.0 rc branch ([e2eb11c](https://github.com/amrendr/node-demo/commit/e2eb11ce12b3694dfe6ba8492e7fc8f82ed5b0b9))
+
 ## [1.5.1](https://github.com/amrendr/node-demo/compare/v1.5.0...v1.5.1) (2022-05-01)
 
 
