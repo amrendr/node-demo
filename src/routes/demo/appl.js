@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var app = 'Demo Application';
+var app = 'Demo App';
 
 router.get('/', function (req, res, next) {
   res.render('./demo/index', { app, title: 'Intro' });
