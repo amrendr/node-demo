@@ -1,3 +1,11 @@
+# [1.6.0-rc.5](https://github.com/amrendr/node-demo/compare/v1.6.0-rc.4...v1.6.0-rc.5) (2022-05-06)
+
+
+### Reverts
+
+* Revert "fix(demo): fix btn color and ring in dark mode" ([ea348d9](https://github.com/amrendr/node-demo/commit/ea348d9dc975eb1a9247797a994af8f1c573e717))
+* Revert "fix(demo): proper card shadow in dark mode" ([6da916e](https://github.com/amrendr/node-demo/commit/6da916e6e1ba9788f6f5cd2cb4195e8c3477dab2))
+
 # [1.6.0-rc.4](https://github.com/amrendr/node-demo/compare/v1.6.0-rc.3...v1.6.0-rc.4) (2022-05-06)
 
 
