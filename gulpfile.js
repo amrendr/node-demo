@@ -1,6 +1,21 @@
 const { series, parallel, src, dest, watch } = require('gulp');
 const postcss = require('gulp-postcss');
 const uglify = require('gulp-uglify');
+const download = require('gulp-download2');
+const gunzip = require('gulp-gunzip');
+
+function downloadMaxmindDb() {
+  var dbfile = 'https://raw.githubusercontent.com/wp-statistics/GeoLite2-City/master/GeoLite2-City.mmdb.gz';
+  return download(dbfile,
+    {
+      errorCallback: function (code) {
+        console.error('Un oh, not able download the geolocation db file!');
+        process.exit(1);
+      }
+    })
+    .pipe(gunzip())
+    .pipe(dest('./dist/maxmind'));
+}
 
 function buildCss() {
   return src('./src/assets/css/*.css')
@@ -21,5 +36,5 @@ function watcher() {
 }
 
 exports.default = parallel(buildCss, buildJs);
+exports.geodata = series(downloadMaxmindDb);
 exports.watch = watcher;
-

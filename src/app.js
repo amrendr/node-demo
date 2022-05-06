@@ -6,10 +6,12 @@ var cookieParser = require('cookie-parser');
 var compress = require('compression');
 var helmet = require('helmet');
 var morgan = require('./service/logger').morgan;
+var app_cookie = require('./middleware/app-cookies');
 var app_context = require('./middleware/app-context');
 var app_locals = require('./middleware/app-locals');
 
 var indexRouter = require('./routes/index');
+var demoRouter = require('./routes/demo/appl');
 
 var app = express();
 
@@ -45,6 +47,7 @@ app.use(cookieParser());
 app.use(httpContext.middleware);
 app.use(app_locals);
 app.use(app_context);
+app.use(app_cookie);
 
 // anything require httpcontext should be added after this line
 app.use(express.static(path.join(__dirname, '../public')));
@@ -54,6 +57,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(require('./middleware/dev_livereload'));
 
 app.use('/', indexRouter);
+app.use('/demo', demoRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

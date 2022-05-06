@@ -1,0 +1,14 @@
+extends ../layout
+
+block append script
+  script(src='/js/formdata.js')
+
+block content
+  div(class='flex flex-col items-center justify-center h-full-screen app-text-secondary')
+    p(class='text-2xl text-center') Thank you 
+      span#fname 
+      span  
+      span#lname 
+      span  
+      span for your application at #{app}
+    a(href='../' class='app-btn m-5') Home

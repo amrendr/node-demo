@@ -1,22 +1,24 @@
 {
-  "name": "node-template",
-  "version": "1.0.0",
+  "name": "node-demo",
+  "version": "1.5.1",
   "private": true,
   "scripts": {
     "commit": "git-cz",
-    "start": "gulp && nodemon ./src/server.js",
+    "start": "concurrently --names \"Gulp,Watch,Node\" -c \"bgGreen.bold,bgBlue.bold,bgMagenta.bold\"  \"gulp\" \"gulp watch\" \"nodemon ./src/server.js\"",
     "test": "echo 'Setup some test'",
     "semantic-release": "semantic-release",
     "build:assets": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/amrendr/node-template.git"
+    "url": "https://github.com/amrendr/node-demo.git"
   },
   "dependencies": {
+    "@maxmind/geoip2-node": "^3.4.0",
     "compression": "^1.7.4",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "device-detector-js": "^3.0.3",
     "dotenv": "^10.0.0",
     "express": "~4.16.1",
     "express-http-context": "^1.2.4",
@@ -34,12 +36,16 @@
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
+    "@tailwindcss/forms": "^0.5.0",
     "autoprefixer": "^10.4.2",
     "commitizen": "^4.2.4",
+    "concurrently": "^7.1.0",
     "connect-livereload": "^0.6.1",
     "cssnano": "^5.0.8",
     "cz-conventional-changelog": "^3.3.0",
     "gulp": "^4.0.2",
+    "gulp-download2": "^1.1.0",
+    "gulp-gunzip": "^1.1.0",
     "gulp-postcss": "^9.0.1",
     "gulp-uglify": "^3.0.2",
     "livereload": "^0.9.3",

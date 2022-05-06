@@ -1,0 +1,52 @@
+extends ../layout
+
+block append script
+  script(src='/js/formdata.js') 
+
+block content
+  p(class='text-3xl text-center app-text-primary') #{app}
+  div(class="mt-6 app-text-secondary")
+    form#form
+      div(class="app-card overflow-hidden")
+        div(class="px-4 py-5 app-bg-100 sm:p-6")
+          div(class="grid grid-cols-6 gap-6")
+            div(class="col-span-6 sm:col-span-3")
+              label(for="first-name", class="app-label") First name
+              input#first-name(type="text", name="first-name", autocomplete="given-name", class="app-input")
+            div(class="col-span-6 sm:col-span-3")
+              label(for="last-name", class="app-label") Last name
+              input#last-name(type="text", name="last-name", autocomplete="family-name", class="app-input")
+            div(class="col-span-6 sm:col-span-4")
+              label(for="email-address", class="app-label") Email address
+              input#email-address(type="text", name="email-address", autocomplete="email", class="app-input")
+            div(class="col-span-6 sm:col-span-2")
+              label(for="phone-number", class="app-label") Phone Number
+              input#phone-number(type="text", name="phone-number", autocomplete="phone", class="app-input")
+            div(class="col-span-6 sm:col-span-3")
+              label(for="country", class="app-label") Country / Region
+              select#country(name="country", autocomplete="country", class="app-input focus:outline-none py-2 px-3 border bg-white")
+                option United States
+                option Canada
+                option Mexico
+            div(class="col-span-6")
+              label(for="street-address", class="app-label") Street address
+              input#street-address(type="text", name="street-address", autocomplete="street-address", class="app-input")
+            div(class="col-span-6 sm:col-span-6 lg:col-span-2")
+              label(for="city", class="app-label") City
+              input#city(type="text", name="city", class="app-input")
+            div(class="col-span-6 sm:col-span-3 lg:col-span-2")
+              label(for="state", class="app-label") State / Province
+              input#state(type="text", name="state", class="app-input")
+            div(class="col-span-6 sm:col-span-3 lg:col-span-2")
+              label(for="postal-code", class="app-label") ZIP / Postal
+              input#postal-code(type="text", name="postal-code", autocomplete="postal-code", class="app-input")
+            div(class="col-span-6")
+              div(class="flex items-center")
+                div(class="flex items-center h-5")
+                  input#work-status(name="work-status", type="checkbox", class="h-6 w-6 app-input")
+                div(class="ml-3 mt-1 text-sm")
+                  label(for="work-status", class="app-label") Are you eligible to work in the US?
+                
+        div(class="px-4 py-3 app-bg-200 text-right sm:px-6")
+          a#back(href='/demo', class="app-btn") Back
+          a#next(href='/demo/resume.htm', class="app-btn") Next

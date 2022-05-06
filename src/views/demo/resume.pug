@@ -1,0 +1,19 @@
+extends ../layout
+
+block append script
+  script(src='/js/formdata.js') 
+
+block content
+  p(class='text-3xl text-center app-text-primary') #{app}
+  div(class="app-card mt-6")
+    form#form
+      div(class="shadow hover:shadow-lg overflow-hidden sm:rounded-md")
+        div(class="px-4 py-5 app-bg-100 sm:p-6")
+          div(class="grid grid-cols-6 gap-6")
+            div(class="col-span-6")
+              label(for="resume", class="app-label") Your resume
+              textarea#resume(cols="30", rows="15" name="resume", autocomplete="none", class="app-input")
+              p(class="app-input-helptext") Please enter your resume
+        div(class="px-4 py-3 app-bg-200 text-right sm:px-6")
+          a#back(class="app-btn", href='/demo/info.htm') Back
+          a#next(class="app-btn", href='/demo/thankyou.htm') Next
