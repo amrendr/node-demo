@@ -1,3 +1,11 @@
+# [1.6.0-rc.4](https://github.com/amrendr/node-demo/compare/v1.6.0-rc.3...v1.6.0-rc.4) (2022-05-06)
+
+
+### Bug Fixes
+
+* **demo:** fix btn color and ring in dark mode ([c6954b0](https://github.com/amrendr/node-demo/commit/c6954b07ba5b835a41f7e4e6bd20d3421ff10034))
+* **demo:** proper card shadow in dark mode ([cfbc23f](https://github.com/amrendr/node-demo/commit/cfbc23f9410547aefbeba8f68682db155a43b047))
+
 # [1.6.0-rc.3](https://github.com/amrendr/node-demo/compare/v1.6.0-rc.2...v1.6.0-rc.3) (2022-05-06)
 
 
