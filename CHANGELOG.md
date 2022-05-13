@@ -1,3 +1,15 @@
+# [1.7.0](https://github.com/amrendr/node-demo/compare/v1.6.0...v1.7.0) (2022-05-13)
+
+
+### Bug Fixes
+
+* **demo:** Darkmode switch always on top n rounded ([fb5066a](https://github.com/amrendr/node-demo/commit/fb5066aaca2bdb7d7c49287f9e86bcb801f8228f))
+
+
+### Features
+
+* **demo:** Add popup shadow to the cards ([2e6f4cf](https://github.com/amrendr/node-demo/commit/2e6f4cf7b6cce8235314b53660fd6984b8363164))
+
 # [1.7.0-rc.1](https://github.com/amrendr/node-demo/compare/v1.6.0...v1.7.0-rc.1) (2022-05-13)
 
 
