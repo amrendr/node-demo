@@ -1,3 +1,10 @@
+# [1.8.0-rc.1](https://github.com/amrendr/node-demo/compare/v1.7.0...v1.8.0-rc.1) (2022-05-13)
+
+
+### Features
+
+* **pre-release:** Starting next rc branch ([275eaae](https://github.com/amrendr/node-demo/commit/275eaae4c4848e5f81b98ec03bde59e772cb0c9f))
+
 # [1.7.0](https://github.com/amrendr/node-demo/compare/v1.6.0...v1.7.0) (2022-05-13)
 
 
